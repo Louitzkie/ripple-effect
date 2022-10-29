@@ -16,5 +16,7 @@ btns.forEach((btn) => {
     circle.style.left = xInside + "px";
     circle.style.top = yInside + "px";
     btn.appendChild(circle);
+
+    setTimeout(() => circle.remove(), 500);
   });
 });
